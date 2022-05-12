@@ -7,6 +7,7 @@ RUN apt-get -qq update \
         libfontconfig1 \
         libgl1-mesa-glx \
         libgl1-mesa-dri \
+        git \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -qq autoremove \
     && apt-get -qq clean
