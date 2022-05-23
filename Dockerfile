@@ -8,7 +8,7 @@ RUN apt-get -qq update \
         libgl1-mesa-glx \
         libgl1-mesa-dri \
         git \
-        openssh-client \
+        curl \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -qq autoremove \
     && apt-get -qq clean
